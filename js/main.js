@@ -1,18 +1,3 @@
-/*!
-=========================================================
-* Meyawo Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-
 
 // smooth scroll
 $(document).ready(function(){
@@ -38,13 +23,6 @@ $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
-
-
-
-//
-
-
-
 
 
 let addButton = document.getElementById("addButton");
@@ -79,9 +57,6 @@ addButton.addEventListener("click", function (event) {
        renderListBook(); 
     }
 });
-
-
-
 
 function renderListBook() {
   let books = localStorage.getItem("books") ? JSON.parse(localStorage.getItem("books")) : [];
@@ -120,7 +95,6 @@ function renderListBook() {
 }
 
 function deleteBooks(id){
-    
   let books = localStorage.getItem("books") ? JSON.parse(localStorage.getItem("books")) : [];
    books.splice(id, 1);
    localStorage.setItem("books", JSON.stringify(books));
@@ -129,7 +103,6 @@ function deleteBooks(id){
 }
 
 function editBook(id) {
-
   let books = localStorage.getItem("books") ? JSON.parse(localStorage.getItem("books")) : [];
 
   // Lấy thông tin của cuốn sách cần chỉnh sửa
@@ -159,8 +132,7 @@ function editBook(id) {
       renderListBook();
   });
 }
-  
-// search book
+
 let searchButton = document.getElementById("searchButton");
 let listSearch = document.getElementById("list-search");
 // sử lý sự kiện searchBooks
@@ -185,19 +157,31 @@ searchButton.addEventListener("click", function (e) {
             rows[i].style.backgroundColor = "";
         }
     }
-
-    //
-    let lastRowIndex = books.length; // Giả sử books là mảng chứa thông tin sách
-    let lastRow = document.createElement("tr");
-
-    // Tạo và thêm các ô cột vào dòng cuối cùng
-    // ...
-
-    // Thêm dòng vào bảng
-    document.getElementById("table-book").appendChild(lastRow);
-
-    // Cuộn trang web đến dòng cuối cùng vừa thêm
-    lastRow.scrollIntoView({ behavior: "smooth", block: "end" });
 });
 
 
+
+// smooth scroll
+$(document).ready(function(){
+    $(".navbar .nav-link").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
+});
+
+// navbar toggle
+$('#nav-toggle').click(function(){
+    $(this).toggleClass('is-active')
+    $('ul.nav').toggleClass('show');
+});

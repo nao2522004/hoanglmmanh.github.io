@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>HoangLeNguyenManh</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="css/meyawo.css">
+</head>
+
+<body onload="renderListBook()" data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<style>
+    
+    #menuicon {
+        color: #fff;
+        background-color: rgba(7, 7, 7, 0);
+        border: none;
+    }
+
+    body {
+    color: #000; /* Đặt màu chữ về mặc định, thường là đen (#000) */
+}
+
+</style>
+
+<!-- Page Navbar -->
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Hoàng Mạnh</a>
+        <ul class="nav">
+            <li class="item ml-md-3">
+                <a href="index.html" class="btn btn-primary" id="menuicon" >Home</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="index.html" class="btn btn-primary" id="menuicon" >About</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="requirement.html" class="btn btn-primary" id="menuicon" >Requirement</a>
+            </li>
+            <li class="item ml-md-3">
+                <a href="design.html" class="btn btn-primary"id="menuicon">Design</a>
+            </li>
+          
+           
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<style>
+    /* Add this CSS to your HTML or link it from an external CSS file */
+    .about {
+        position: relative;
+    }
+
+    .about .overlay {
+        opacity: 0; /* Set opacity to 0 to remove the overlay */
+    }
+
+    .about-caption {
+        padding: 20px;
+    }
+</style>
+
+<!-- page header -->
+<header id="home" class="header">
+    <div class="overlay"></div>
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-caption">
+                    <style>
+                        *{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    
+                    .quanly{
+                        height: 600px;
+                        width: 1000px;
+                        border-radius: 20px;
+                        border: solid black;
+                        margin-bottom: 40px;
+                        background-color: #fff;
+
+                    }
+                    
+                    .quanly_head{
+                        height: 40%;
+                    }
+                    
+                    .quanly--dulieu{
+                        display: flex;
+                    
+                    }
+                    
+                    .head--top{
+                        display: flex;
+                        height: 60%;
+                        justify-content: space-around;
+                    }
+                    
+                    .head--body{
+                        display: flex;
+                        flex-direction: column  ;
+                        height: 100%;
+                        flex: 1;
+                        padding: 0 20px;
+                        justify-content: space-evenly;
+                    }
+                    
+                    .dulieu--input{
+                           flex: 1;
+                           min-height: 25px;
+                    }
+                    
+                    .quanly--label{
+                        display: flex;
+                         min-width: 50px;
+                         min-height: 25px;
+                         align-items: center;
+                         padding-top: 7px;
+                    
+                    }
+                    
+                    .head--bottom{
+                        min-height: 40%;
+                        display: flex;
+                    }
+                    
+                    .quanly--button{
+                       display: flex; 
+                       justify-content: space-evenly;
+                          
+                    }
+                    
+                    .button1, .button2{
+                        flex: 1;
+                    }
+                    .button3{
+                        flex: 2;
+                    }
+                    
+                    .quanly--button button{
+                        height: 50px;
+                        min-width: 60px;
+                        margin-top: 20px;
+                        border: solid black;
+                        border-radius: 20px;
+                    }
+                    
+                    .button--label{
+                        min-width: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding-top: 8px;
+                    }
+                    
+                    .quanly--button button:active{
+                      opacity: 0.5;    
+                    }
+                    
+                    .quanly--button button:hover{
+                           cursor: grab ;
+                    }
+                    
+                    .quanly_top{
+                        min-height: 60%;
+                    }
+                    
+                    .top-title{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                     
+                    .list-book{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .list-book table{
+                    width: 100%;
+                    }
+                    
+                    
+                        .list-book {
+                            max-height: 300px; /* Đặt chiều cao tối đa của phần chứa bảng */
+                            overflow: auto; /* Tạo thanh cuộn khi cần thiết */
+                        }
+                        
+                        #list-search{
+                            margin-top: 29px;
+                            height: 35px;
+                            width: 250px;
+                        }
+                    
+                       </style>
+                    
+                        <!-- tạo phần thêm dữ liệu của hệ thống quản lý sản phẩm -->
+                            <div class="quanly">
+                                <form class="quanly_head" id="myForm">
+                                    <div class="head--top">
+                                        <div class="head--body">
+                                            <div class="quanly--dulieu">
+                                                <label class="quanly--label" for="">Name:</label>
+                                                <input class="dulieu--input" id="nameField" type="text">
+                                            </div>
+                                            <div class="quanly--dulieu">
+                                                <label class="quanly--label" for="">Artist:</label>
+                                                <input class="dulieu--input" id="artistField" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="head--body">
+                                            <div class="quanly--dulieu">
+                                                <label class="quanly--label" for="">Price:</label>
+                                                <input class="dulieu--input" id="priceField" type="text">
+                                            </div>
+                                            <div class="quanly--dulieu">
+                                                <label class="quanly--label" for="">Type:</label>
+                                                <input class="dulieu--input" id="typeField" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="head--bottom">
+                                        <div class="quanly--button button1">
+                                            <label class="button--label" for="">Add:</label>
+                                            <button id="addButton"> <i class="fa-solid fa-plus"></i> </button>
+                                        </div>
+                                        <div class="quanly--button button2" >
+                                            <label class="button--label" for="">Update:</label>
+                                            <button id="saveButton"> <i class="fa-solid fa-floppy-disk"></i> </button>
+                                        </div>
+                                        <div class="quanly--button button3">
+                                            <label class="button--label" for="">Search:</label>
+                                            <div class="search_container"> <input type="search" id="list-search"> </div>
+                                                <button id="searchButton"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                                            </div>
+                                        </div>
+                                </form>
+                                <div class="quanly_top">
+                                    <div class="top-title">
+                                        <h1> Quản lý tác phẩm </h1>
+                                    </div>
+                    
+                                    <div class="list-book" id="list-book">
+                                        <table id="table-book" border="1" cellpadding="0">
+                    
+                                        </table>
+                                    </div>
+                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+</header><!-- end of page header -->
+
+
+</div>
+   
+   
+   
+ 
+    
+     <!-- core  -->
+     <script src="vendors/jquery/jquery-3.4.1.js"></script>
+     <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+ 
+     <!-- bootstrap 3 affix -->
+     <script src="vendors/bootstrap/bootstrap.affix.js"></script>
+ 
+     <!-- Meyawo js -->
+      <script src="js/meyawo.js"></script>
+</body>
+
+</html>

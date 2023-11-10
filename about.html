@@ -9,27 +9,50 @@
     <title>HoangLeNguyenManh</title>
     <!-- font icons -->
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="css/meyawo.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <style>
+        #menuicon {
+            color: #fff;
+            background-color: rgba(7, 7, 7, 0);
+            border: none;
+        }
+    </style>
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+
         <div class="container">
             <a class="logo" href="#">Hoàng Mạnh</a>
             <ul class="nav">
                 <li class="item ml-md-3">
-                    <a href="index.html" class="btn btn-primary">Home</a>
+                    <a href="index.html" class="btn btn-primary" id="menuicon">Home</a>
                 </li>
+                <li class="item ml-md-3">
+                    <a href="requirement.html" class="btn btn-primary" id="menuicon">Requirement</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="design.html" class="btn btn-primary" id="menuicon">Design</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="implement.html" class="btn btn-primary" id="menuicon">Implement</a>
+                </li>
+
+
+
             </ul>
+
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
             </a>
         </div>
+
     </nav><!-- End of Page Navbar -->
 
     <style>
@@ -37,17 +60,18 @@
         .about {
             position: relative;
         }
-    
+
         .about .overlay {
-            opacity: 0; /* Set opacity to 0 to remove the overlay */
+            opacity: 0;
+            /* Set opacity to 0 to remove the overlay */
         }
-    
+
         .about-caption {
             padding: 20px;
             color: #fff;
         }
     </style>
-    
+
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
@@ -58,7 +82,7 @@
                 <!-- about wrapper -->
                 <div class="about">
                     <div class="about-img-holder">
-                        <img src="imgs/NguyenManh.jpg" class="about-img"  style="opacity: 1;"
+                        <img src="imgs/NguyenManh.jpg" class="about-img" style="opacity: 1;"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="about-caption">
@@ -73,7 +97,7 @@
                             <br> Nghề nghiệp : Trong tương lại thì tôi muốn mình trở thành một Full stack developer.
                             <br> Giới thiệu : Tôi là một sinh viên đại học ngành "Công nghệ thông tin" năm hai , tôi sẽ
                             chia sẽ cho các bạn về quá trình học hỏi của tôi ở trên trường.
-                       
+
                         </p>
                         <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
                     </div>
@@ -82,10 +106,10 @@
         </section> <!-- end of about section -->
     </header><!-- end of page header -->
 
-   
+
     <!-- portfolio section -->
-   
-    <section class="section" id="portfolio"  >
+
+    <section class="section" id="portfolio">
         <div class="container text-center">
             <p class="section-subtitle">Kiến thức ?</p>
             <h6 class="section-title mb-6">mà tôi đã được học.</h6>
@@ -98,8 +122,10 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>JAVA</h5>
-                                    <p class="font-weight-normal"> Đây là ngôn ngữ đầu tiên em được học , Java là một trong
-                                        những ngôn ngữ lập trình hướng đối tượng. Nó được sử dụng trong phát triển phần mềm,
+                                    <p class="font-weight-normal"> Đây là ngôn ngữ đầu tiên em được học , Java là một
+                                        trong
+                                        những ngôn ngữ lập trình hướng đối tượng. Nó được sử dụng trong phát triển phần
+                                        mềm,
                                         trang web, game hay ứng dụng trên các thiết bị di động.
                                     </p>
                             </span>
@@ -113,8 +139,10 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>hTML,CSS,JAVASCRIPT</h5>
-                                    <p class="font-weight-normal"> HTML, CSS và Javascript được xem là bộ ba ngôn ngữ rất cần
-                                        thiết đối với mọi lập trình viên web. Dù cho bạn muốn xây dựng nên một sản phẩm đơn giản
+                                    <p class="font-weight-normal"> HTML, CSS và Javascript được xem là bộ ba ngôn ngữ
+                                        rất cần
+                                        thiết đối với mọi lập trình viên web. Dù cho bạn muốn xây dựng nên một sản phẩm
+                                        đơn giản
                                         hay phức tạp thì cũng đều không thể thiếu đi sự "góp mặt" của chúng.
                                     </p>
                             </span>
@@ -128,7 +156,8 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>LINUX</h5>
-                                    <p class="font-weight-normal"> Linux là một hệ điều hành máy tính được phát triển từ năm
+                                    <p class="font-weight-normal"> Linux là một hệ điều hành máy tính được phát triển từ
+                                        năm
                                         1991 dựa trên hệ điều hành Unix và bằng viết bằng ngôn ngữ C.
                                     </p>
                             </span>
@@ -139,9 +168,7 @@
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
-</div>
-
-
+    </div>
 
 
     <!-- contact section -->
@@ -169,6 +196,8 @@
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
+
+
 
     <!-- footer -->
     <div class="container">

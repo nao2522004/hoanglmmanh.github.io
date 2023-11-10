@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container__book{
+    display: flex;
+    justify-content: space-between;
+    height: 725px;
+    width: 1510px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quanly{
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    border: solid black;
+}
+
+.quanly_head{
+    height: 40%;
+}
+
+.quanly--dulieu{
+    display: flex;
+
+}
+
+.head--top{
+    display: flex;
+    height: 60%;
+    justify-content: space-around;
+}
+
+.head--body{
+    display: flex;
+    flex-direction: column  ;
+    height: 100%;
+    flex: 1;
+    padding: 0 20px;
+    justify-content: space-evenly;
+}
+
+.dulieu--input{
+       flex: 1;
+       min-height: 25px;
+}
+
+.quanly--label{
+    display: flex;
+     min-width: 50px;
+     min-height: 25px;
+     align-items: center;
+
+}
+
+.head--bottom{
+    min-height: 40%;
+    display: flex;
+}
+
+.quanly--button{
+   display: flex; 
+   justify-content: space-evenly;
+      
+}
+
+.button1, .button2{
+    flex: 1;
+}
+.button3{
+    flex: 2;
+}
+
+.quanly--button button{
+    height: 50px;
+    min-width: 60px;
+    margin-top: 20px;
+    border: solid black;
+    border-radius: 20px;
+}
+
+.button--label{
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quanly--button button:active{
+  opacity: 0.5;    
+}
+
+.quanly--button button:hover{
+       cursor: grab ;
+}
+
+.quanly_top{
+    min-height: 60%;
+}
+
+.top-title{
+    display: flex;
+    justify-content: center;
+}
+
+.top-nameElement{
+display: flex;
+justify-content: space-evenly;
+padding-top:10px ;
+}
+ 
+.list-book{
+    display: flex;
+    justify-content: center;
+}
+.list-book table{
+width: 100%;
+}
+
+
+    .list-book {
+        max-height: 300px; /* Đặt chiều cao tối đa của phần chứa bảng */
+        overflow: auto; /* Tạo thanh cuộn khi cần thiết */
+    }
+    
+    #list-search{
+        margin-top: 34px;
+        height: 27px;
+        width: 250px;
+    }
+
+
+
+
+
+
+
