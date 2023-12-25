@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22130163</title>
+    <!-- Liên kết với Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            /* Reset margin to ensure full width */
+            padding: 0;
+            /* Reset padding */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho header */
+        }
+
+        nav {
+            padding: 10px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho nav */
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Đặt z-index cao hơn nếu cần */
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            /* Thêm thanh cuộn dọc khi nội dung vượt quá chiều cao */
+            padding-bottom: 100px;
+            /* Thêm padding-bottom để giảm nguy cơ che khuất bởi footer */
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 0;
+            /* Đặt z-index cho section */
+            border-radius: 2px;
+            border: 2px solid black;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 15px;
+
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            flex-basis: 25%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            margin-top: 20px;
+            /* Thêm margin-top để giảm nguy cơ che khuất bởi section */
+            z-index: 1;
+            /* Đặt z-index cho footer */
+        }
+
+
+        .textheader {
+            font-weight: 900;
+        }
+
+        .textheader1 {
+            font-weight: 700;
+        }
+
+        .img_header {
+            width: 300px;
+        }
+
+        .mainContent {
+            width: 100%;
+        }
+
+        .imgtesting {
+            border-radius: 5px;
+            width: 230px;
+            margin-right: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .containers_header {
+            border-bottom: solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between">
+        <a style="color: #fff;" class="navbar-brand" href="lab6.html">
+            <h1>Lab6</h1>
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="about.html">About</a>
+            <a class="navbar-brand" href="#">Ex2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent1" data-toggle="collapse">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent" data-toggle="collapse">Implementation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="labContent" class="collapse">
+
+        <div class="containers" style="border: 2px solid black; border-radius: 5px;">
+            <article class="containers_header d-flex align-items-center justify-content-around">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="textheader">Learn the ABCS of CXO</h3>
+                    <p class="textheader1">Everything You Need to Know About A/B & Multivariate Testing</p>
+                </div>
+                <img class="img_header" src="imgs/anhcongnghe.jpg" alt="">
+            </article>
+
+
+            <article class="d-flex" style="background-color: #E8EEEE;">
+                <div class="mainContent row ">
+                    <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
+                        <div class="mainContent_text">
+                            <div class="d-flex  align-items-center">
+                                <h5 class="textheader" style="color: red;">To A\B Test, or to Multivariate Test?</h5>
+                                <div class="logo d-flex ml-5 pl-5">
+                                    <img class="logo ml-5" src="imgs/facebook.png" alt="">
+                                    <img class="logo" src="imgs/google.png" alt=""><img class="logo"
+                                        src="imgs/instagram.png" alt=""><img class="logo" src="imgs/twitter.png" alt="">
+                                </div>
+                            </div>
+                            <p class="textheader1">Now, that is question.</p>
+                            <p>Both A/B and Multivariate testing (MVT) should be in every Modern . The trick id <br>
+                                knowing
+                                when to deploy one over the other </p>
+                            <P>Compared to MVT, A/B testing is fast and straighfonweat. You learn which of two posible
+                                verions <br> performs better. A/B upside is simplicity in process and concept. But the
+                                downside and be simplicity in <br> results</P>
+                            <p>MVT takes more time to axecute than A/B testing. but it can generate more actionable
+                                insights. <br>Multivariate tests compare at least four versions of an experience
+                                simultaneosly.</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="imgtesting" src="imgs/testing.jpg" alt="">
+                                <p>Realy to learn more? Dowload Everything You Need to Know <br> About A/B &
+                                    Multivariate Testing to learn more the similiars <br> and diffences between these
+                                    two powerful forms of optionstation <br> testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="border-radius: 10px; border: 2px solid black;">
+                        <div class="inputs">
+                            <h6>Email address *</h6>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>First name and Last name *</h6>
+                            <div class="input-group">
+                                <input type="text" placeholder="Fist name" aria-label="First name" class="form-control">
+                                <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Country *</h6>
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Country</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Hà Nội</a>
+                                        <a class="dropdown-item" href="#">Sài gòn</a>
+                                        <a class="dropdown-item" href="#">Gia nghĩa</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Company name *</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Company name" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Job title *</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Job title" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div style="width: 200px;"
+                            class="form-check p-2     border border-primary rounded d-flex align-items-center">
+                            <input class="form-check-input ml-2" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label ml-4" for="defaultCheck1">
+                                I am not a robot!
+                            </label>
+                        </div>
+
+                        <div class="camket mt-2">
+                            <p>I commit to diligently downloading and completing the English course "[Course Title]" to
+                                enhance my language skills. I pledge to adhere to guidelines, actively participate, and
+                                respect course content.</p>
+                        </div>
+
+                        <div class="dowload d-flex justify-content-center mb-3">
+                            <a style="width: 80%;" href="#" class="btn btn-danger" download>Download Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </article>
+
+        </div>
+    </section>
+
+
+    <section id="labContent1" class="collapse">
+
+        <div class="containers" style="border: 2px solid black; border-radius: 5px;">
+            <article class="containers_header d-flex align-items-center justify-content-around">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="textheader">Learn the ABCS of CXO</h3>
+                    <p class="textheader1">Everything You Need to Know About A/B & Multivariate Testing</p>
+                </div>
+                <img class="img_header" src="imgs/anhcongnghe.jpg" alt="">
+            </article>
+
+
+            <article class="d-flex" style="background-color: #E8EEEE;">
+                <div class="mainContent row ">
+                    <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
+                        <div class="mainContent_text">
+                            <div class="d-flex  align-items-center">
+                                <h5 class="textheader" style="color: red;">To A\B Test, or to Multivariate Test?</h5>
+                                <div class="logo d-flex ml-5 pl-5">
+                                    <img class="logo ml-5" src="imgs/facebook.png" alt="">
+                                    <img class="logo" src="imgs/google.png" alt=""><img class="logo"
+                                        src="imgs/instagram.png" alt=""><img class="logo" src="imgs/twitter.png" alt="">
+                                </div>
+                            </div>
+                            <p class="textheader1">Now, that is question.</p>
+                            <p>Both A/B and Multivariate testing (MVT) should be in every Modern . The trick id <br>
+                                knowing
+                                when to deploy one over the other </p>
+                            <P>Compared to MVT, A/B testing is fast and straighfonweat. You learn which of two posible
+                                verions <br> performs better. A/B upside is simplicity in process and concept. But the
+                                downside and be simplicity in <br> results</P>
+                            <p>MVT takes more time to axecute than A/B testing. but it can generate more actionable
+                                insights. <br>Multivariate tests compare at least four versions of an experience
+                                simultaneosly.</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="imgtesting" src="imgs/testing.jpg" alt="">
+                                <p>Realy to learn more? Dowload Everything You Need to Know <br> About A/B &
+                                    Multivariate Testing to learn more the similiars <br> and diffences between these
+                                    two powerful forms of optionstation <br> testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="border-radius: 10px; border: 2px solid black;">
+                        <div class="inputs">
+                            <h6>Email address *</h6>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>First name and Last name *</h6>
+                            <div class="input-group">
+                                <input type="text" placeholder="Fist name" aria-label="First name" class="form-control">
+                                <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Country *</h6>
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Country</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Hà Nội</a>
+                                        <a class="dropdown-item" href="#">Sài gòn</a>
+                                        <a class="dropdown-item" href="#">Gia nghĩa</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Company name *</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Company name" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <h6>Job title *</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Job title" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div style="width: 200px;"
+                            class="form-check p-2     border border-primary rounded d-flex align-items-center">
+                            <input class="form-check-input ml-2" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label ml-4" for="defaultCheck1">
+                                I am not a robot!
+                            </label>
+                        </div>
+
+                        <div class="camket mt-2">
+                            <p>I commit to diligently downloading and completing the English course "[Course Title]" to
+                                enhance my language skills. I pledge to adhere to guidelines, actively participate, and
+                                respect course content.</p>
+                        </div>
+
+                        <div class="dowload d-flex justify-content-center mb-3">
+                            <a style="width: 80%;" href="#" class="btn btn-danger" download>Download Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </article>
+
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <p class="text-white">&copy; Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
+        </div>
+    </footer>
+
+    <!-- Liên kết với Bootstrap JS và Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22130163</title>
+    <!-- Liên kết với Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            /* Reset margin to ensure full width */
+            padding: 0;
+            /* Reset padding */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho header */
+        }
+
+        nav {
+            padding: 10px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho nav */
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Đặt z-index cao hơn nếu cần */
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            /* Thêm thanh cuộn dọc khi nội dung vượt quá chiều cao */
+            padding-bottom: 100px;
+            /* Thêm padding-bottom để giảm nguy cơ che khuất bởi footer */
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 0;
+            /* Đặt z-index cho section */
+
+        }
+
+        article {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            flex-basis: 25%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            margin-top: 20px;
+            /* Thêm margin-top để giảm nguy cơ che khuất bởi section */
+            z-index: 1;
+            /* Đặt z-index cho footer */
+        }
+
+        .img_content {
+            border-radius: 5px;
+            width: 320px;
+            height: 230px;
+        }
+
+        .container_content {
+            border-bottom: 1px solid black;
+        }
+
+        .sidebar_content {
+            margin-top: 40px;
+        }
+
+        .header_dulich {
+            background-color: rgb(119, 121, 119);
+        }
+
+        .hinhgoiy {
+            width: 150px;
+            height: 100px;
+            border-radius: 2px;
+        }
+
+        .containers {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-between">
+        <a style="color: #fff;" class="navbar-brand" href="lab6.html">
+            <h1>Lab6</h1>
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="about.html">About</a>
+            <a class="navbar-brand" href="#">Ex1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent1" data-toggle="collapse">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent" data-toggle="collapse">Implementation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <section id="labContent" class="collapse">
+        <div class="containers">
+            <header class="header_dulich  d-flex justify-content-between">
+                <h1>Travels</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="collapse">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="collapse">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="collapse">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="collapse">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-info">Sign up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <article class="m-3">
+                <div class="featured-destination d-flex justify-content-center">
+                    <h3>Những Địa Điểm Du Lịch ở Việt Nam Làm Nức Lòng Du Khách Cả Trong Và Ngoài Nước.</h3>
+                </div>
+            </article>
+
+            <div class="noidung d-flex">
+                <article>
+                    <div class="row recent-articles">
+                        <div class="col-md-10">
+                            <div class="container_content article-card d-flex align-items-center p-2">
+                                <img class="img_content mr-3" src="imgs/nuicotien.jpg" alt="">
+                                <div class="content">
+                                    <h4>Chuyến Phiêu Lưu ở Núi Cô Tiên</h4>
+                                    <p>Tọa lạc trong địa phận phường Vĩnh Hòa, thành phố biển Nha Trang, núi
+                                        Cô
+                                        Tiên
+                                        hiện ra tựa như mái tóc bồng bềnh của người con gái. Ngọn núi nằm
+                                        gần
+                                        sát
+                                        với con đường biển đẹp nhất thành phố – đường Phạm Văn Đồng nên rất
+                                        dễ
+                                        tìm
+                                        thấy trên Google Maps.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="container_content article-card d-flex align-items-center p-2">
+                                <img class="img_content mr-3" src="imgs/phongnha.jpg" alt="">
+                                <div class="content">
+                                    <h4>Chuyến Phiêu Lưu ở động Phong Nha Kẻ Bàng</h4>
+                                    <p>Động Phong Nha là điểm đến hấp dẫn mà mọi tín đồ đam mê khám phá không nên bỏ lỡ.
+                                        Tại
+                                        đây, bạn không chỉ được hòa mình vào thiên nhiên non nước hữu tình, đẹp như
+                                        tranh vẽ
+                                        mà
+                                        còn được tận mắt khám phá bàn tay kỳ diệu của tạo hóa từ thuở xa xưa.</p>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+
+                <div class="sidebar pt-2">
+                    <div class="sidebar_content p-5">
+                        <img class="img_content mr-3" src="imgs/diemdennoitieng.jpg" alt="">
+                        <div class="listcontent mt-5">
+                            <h3>Top Điểm Đến Phổ Biến</h3>
+                            <ul>
+                                <li>1. Sapa</li>
+                                <li>2. Hội an</li>
+                                <li>3. Phú quốc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="m-3">
+                <div class="featured-destination justify-content-center">
+                    <h5>Gợi ý những nơi du lịch đẹp</h5>
+                    <div class="hinhdep d-flex justify-content-between">
+                        <img class="hinhgoiy" src="imgs/phongnha.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/hue.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/nhatrang.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/phuquoc.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/thanhhoa.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/catba.jpg" alt="">
+                        <img class="hinhgoiy" src="imgs/vinhhalong.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <div class="noidung d-flex">
+                <article>
+                    <div class="row recent-articles">
+                        <div class="col-md-10">
+                            <div class="container_content article-card d-flex align-items-center p-2">
+                                <img class="img_content mr-3" src="imgs/trangan.jpg" alt="">
+                                <div class="content">
+                                    <h4>Chuyến Phiêu Lưu ở Tràng an</h4>
+                                    <p>TKhu du lịch Tràng An nằm trong Quần thể danh thắng Tràng An (tỉnh Ninh Bình) chỉ
+                                        cách thủ đô Hà Nội chưa đầy 100km. Có lẽ vì thế mà nơi đây được đông đảo du
+                                        khách
+                                        miền Bắc chọn làm điểm du lịch sinh thái, tâm linh mỗi dịp nghỉ hè, nghỉ lễ hay
+                                        cuối
+                                        tuần. Cùng khám phá xem nơi đây có đúng là “tiên cảnh chốn nhân gian” như du
+                                        khách
+                                        vẫn thường nhắc đến không nhé!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="container_content article-card d-flex align-items-center p-2">
+                                <img class="img_content mr-3" src="imgs/muine.jpg" alt="">
+                                <div class="content">
+                                    <h4>Chuyến Phiêu Lưu ở Mũi né</h4>
+                                    <p>Mũi Né là một mũi biển ở thành phố Phan Thiết, một trung tâm du lịch nổi tiếng
+                                        của
+                                        tỉnh Bình Thuận. Tên gọi Mũi Né xuất phát từ ngư dân đánh cá. "Mũi" là cái mũi
+                                        đất
+                                        đưa ra biển lớn; "Né" có nghĩa là nơi tránh giông bão. Năm 2018, Mũi Né được
+                                        công
+                                        nhận là khu du lịch quốc gia. Nơi đây nổi tiếng với bãi biển xanh trải dài và
+                                        những
+                                        đồi cát đẹp.</p>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+
+                <div class="sidebar pt-2">
+                    <div class="sidebar_content p-4">
+                        <div class="listcontent mt-1">
+                            <h3 class="ml-4">Tác giả khác.</h3>
+                            <ul class="d-flex">
+                                <div class="list1 m-4">
+                                    <li>1. Mạnh</li>
+                                    <li>2. Duy</li>
+                                    <li>3. Long</li>
+                                </div>
+                                <div class="list1 m-4">
+                                    <li>4. Mạnh</li>
+                                    <li>5. Duy</li>
+                                    <li>6. Long</li>
+                                </div>
+                            </ul>
+                        </div>
+                        <img class="img_content mr-3" src="imgs/diemdennoitieng.jpg" alt="">
+                    </div>
+                    <!-- <div class="sidebar_content p-5">
+                <img class="img_content mr-3" src="imgs/diemdennoitieng.jpg" alt="">
+                <div class="listcontent mt-5">
+                    <h3>Top Điểm Đến Phổ Biến</h3>
+                    <ul>
+                        <li>4. Nha trang</li>
+                        <li>5. Da nang</li>
+                        <li>6. Thanh hoa</li>
+                    </ul>
+                </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="labContent1" class="collapse">
+        <article>
+            <img class="img_content mr-3" src="imgs/diemdennoitieng.jpg" alt="">
+        </article>
+    </section>
+
+
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <p class="text-white">&copy; Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
+        </div>
+    </footer>
+
+    <!-- Liên kết với Bootstrap JS và Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
