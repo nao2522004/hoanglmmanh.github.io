@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        position: relative;
+        height: 1300px;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid grey;
+        padding: 15px;
+        padding-bottom: 20px;
+        position: fixed;
+        box-sizing: border-box;
+        background-color: white;
+        width: 100%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        justify-content: center;
+    }
+
+    button {
+        width: 130px;
+        height: 40px;
+        border-radius: 30px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: scale(90%);
+    }
+
+    .inputSearch {
+        width: 400px;
+        height: 40px;
+        border: 2px solid #E8EBED;
+        border-radius: 50px;
+        padding-left: 5px;
+    }
+
+    .search {
+        border: none;
+        height: 35px;
+        width: 80%;
+        border-radius: 50px;
+    }
+
+    /* Add this rule to remove outline on focus */
+    .inputSearch input:focus {
+        outline: none;
+    }
+
+    .navigation {
+        width: 8%;
+        height: 100%;
+        position: fixed;
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 700px;
+    }
+
+    .mainContent {
+        width: 92%;
+        margin-left: 8%;
+    }
+
+    section {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .items_nvg {
+        width: 100px;
+        height: 80px;
+        border-radius: 20px;
+        background-color: #E8EBED;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 8px;
+    }
+
+    .items_nvg:hover {
+        cursor: pointer;
+    }
+
+    .items_nvg:active {
+        transform: scale(90%);
+    }
+
+    .item_nvg {
+        width: 100px;
+        height: 80px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 8px;
+        transition: color;
+    }
+
+    .item_nvg:hover {
+        background-color: #E8EBED;
+        cursor: pointer;
+    }
+
+    .items_nvg:active {
+        color: #E8EBED;
+        transform: scale(90%);
+    }
+
+    .icon_nvg {
+        color: black;
+    }
+
+    .text_nvg {
+        color: black;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .imgslide {
+        width: 100%;
+        height: 350px;
+        border-radius: 30px;
+    }
+
+    .imgkhoahoc {
+        width: 280px;
+        height: 150px;
+        border-radius: 30px;
+
+    }
+
+
+
+    p {
+        margin-top: 5px;
+        margin-left: 2px;
+        font-weight: 800;
+    }
+
+    .Khoahoc {
+        box-sizing: border-box;
+        margin-left: 30px;
+        margin-top: 20px;
+
+    }
+
+    .khoahoc_row1 {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .cot1 {
+        width: 300px;
+    }
+
+
+
+    .cot1 {
+        transition: 0.3s;
+    }
+
+    .cot1:hover {
+        transform: scale(1.2);
+    }
+
+    .contact {
+        width: 80px;
+        height: 80px;
+        background-color: #E8EBED;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+        position: fixed;
+        text-decoration: none;
+    }
+
+    .contact:hover {
+        cursor: pointer;
+    }
+
+    .contact:active {
+        transform: scale(97%);
+    }
+
+    .dialog {
+        width: 100%;
+        background-color: #333333;
+    }
+</style>
+
+<body>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Liên hệ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Họ và tên"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Số điện thoại"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div>
+            <h1>Học để lập trình</h1>
+        </div>
+        <div class="inputSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="text" placeholder="Tìm kiếm khóa học, bài viết, video, ..." />
+        </div>
+        <div>
+            <button>Đăng nhập</button>
+            <button>Đăng ký</button>
+        </div>
+    </header>
+
+    </div>
+
+    <!-- body -->
+    <section>
+        <!-- phần menu bên trái -->
+        <div class="navigation">
+            <div>
+                <a class="items_nvg" href="#"> <i class="icon_nvg fa-solid fa-house"></i> <span class="text_nvg">Trang
+                        chủ</span>
+                </a>
+                <a class="item_nvg" href="#"> <i class="icon_nvg fa-solid fa-road"></i> <span class="text_nvg">Lộ
+                        trình</span>
+                </a>
+                <a class="item_nvg" href="#"> <i class="icon_nvg fa-regular fa-file-lines"></i> <span
+                        class="text_nvg">Bài
+                        viết</span>
+                </a>
+                <a class="item_nvg" href="about.html"> <i class="icon_nvg fa-solid fa-user"></i> <span class="text_nvg">About</span>
+            </a>
+            </div>
+
+            <a class="contact" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                    class="fa-brands fa-signal-messenger"></i> <span>Liên hệ</span></a>
+
+            <!-- Phần nội dung chính -->
+        </div>
+        <div class="mainContent">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev1.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev2.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev3.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev5.jpg" alt="Image 1">
+                </div>
+            </div>
+            <div class="Khoahoc">
+                <h2>Khóa học miễn phí.</h2>
+
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc2.png" alt="">
+                        <p>Kiến thức nhập môn IT</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc3.png" alt="">
+                        <p>Lập trình C++ cơ bản, nâng cao.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc1.png" alt="">
+                        <p>HTML, CSS cơ bản.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc4.png" alt="">
+                        <p>Responsive với Grid System.</p>
+                    </div>
+                </div>
+
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc5.png" alt="">
+                        <p>Kiến thức nhập môn IT</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc6.png" alt="">
+                        <p>Lập trình C++ cơ bản, nâng cao.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc7.png" alt="">
+                        <p>HTML, CSS cơ bản.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc8.png" alt="">
+                        <p>Responsive với Grid System.</p>
+                    </div>
+                </div>
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc9.png" alt="">
+                        <p>Kiến thức nhập môn IT</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc10.ơng.png" alt="">
+                        <p>Lập trình C++ cơ bản, nâng cao.</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <p> @ Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
+    </footer>
+
+
+
+
+
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change slide every 3 seconds
+        }
+
+        showSlides(); // Start the slideshow
+    </script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
