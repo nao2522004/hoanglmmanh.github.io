@@ -1,412 +1,413 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
-    position: relative;
-    height: 1300px;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  position: relative;
+  height: 1300px;
+}
+
+.btnHome {
+  position: absolute;
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  transition: 0.1s;
+}
+
+.btnHome:active{
+    transform: scale(0.9);
 }
 
 header {
-    position: absolute;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid grey;
-    padding: 15px;
-    padding-bottom: 20px;
-    position: fixed;
-    box-sizing: border-box;
-    background-color: white;
-    width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid grey;
+  padding: 15px;
+  padding-bottom: 20px;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  justify-content: center;
 }
 
 button {
-    width: 130px;
-    height: 40px;
-    border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:active {
-    transform: scale(90%);
+  transform: scale(90%);
 }
 
 .inputSearch {
-    width: 400px;
-    height: 40px;
-    border: 2px solid #E8EBED;
-    border-radius: 50px;
-    padding-left: 5px;
+  width: 400px;
+  height: 40px;
+  border: 2px solid #e8ebed;
+  border-radius: 50px;
+  padding-left: 5px;
 }
 
 .search {
-    border: none;
-    height: 35px;
-    width: 80%;
-    border-radius: 50px;
+  border: none;
+  height: 35px;
+  width: 80%;
+  border-radius: 50px;
 }
 
 /* Add this rule to remove outline on focus */
 .inputSearch input:focus {
-    outline: none;
+  outline: none;
 }
 
 .navigation {
-    width: 8%;
-    height: 100%;
-    position: fixed;
-    margin-top: 7px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 700px;
+  width: 8%;
+  height: 100%;
+  position: fixed;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 700px;
 }
 
 .mainContent {
-    width: 92%;
-    margin-left: 8%;
+  width: 92%;
+  margin-left: 8%;
 }
 
 section {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 }
 
 .items_nvg {
-    width: 100px;
-    height: 80px;
-    border-radius: 20px;
-    background-color: #E8EBED;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 8px;
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #e8ebed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 8px;
 }
 
 .items_nvg:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .items_nvg:active {
-    transform: scale(90%);
+  transform: scale(90%);
 }
 
 .item_nvg {
-    width: 100px;
-    height: 80px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 8px;
-    transition: color;
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color;
 }
 
 .item_nvg:hover {
-    background-color: #E8EBED;
-    cursor: pointer;
+  background-color: #e8ebed;
+  cursor: pointer;
 }
 
 .items_nvg:active {
-    color: #E8EBED;
-    transform: scale(90%);
+  color: #e8ebed;
+  transform: scale(90%);
 }
 
 .icon_nvg {
-    color: black;
+  color: black;
 }
 
 .text_nvg {
-    color: black;
+  color: black;
 }
 
 .slideshow-container {
-    width: 100%;
-    border-radius: 30px;
-    margin: 10px;
+  width: 100%;
+  border-radius: 30px;
+  margin: 10px;
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
 .imgslide {
-    width: 98%;
-    height: 350px;
-    border-radius: 30px;
+  width: 98%;
+  height: 350px;
+  border-radius: 30px;
 }
 
 .imgkhoahoc {
-    width: 280px;
-    height: 150px;
-    border-radius: 30px;
-
+  width: 280px;
+  height: 150px;
+  border-radius: 30px;
 }
 
-
-
 p {
-    margin-top: 5px;
-    margin-left: 2px;
-    font-weight: 800;
+  margin-top: 5px;
+  margin-left: 2px;
+  font-weight: 800;
 }
 
 .Khoahoc {
-    box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: 20px;
-
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .khoahoc_row1 {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .cot1 {
-    width: 300px;
+  width: 300px;
 }
 
-
-
 .cot1 {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cot1:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .contact {
-    width: 80px;
-    height: 80px;
-    background-color: #E8EBED;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 500px;
-    position: fixed;
-    text-decoration: none;
+  width: 80px;
+  height: 80px;
+  background-color: #e8ebed;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+  position: fixed;
+  text-decoration: none;
 }
 
 .contact:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .contact:active {
-    transform: scale(97%);
+  transform: scale(97%);
 }
 
 .dialog {
-    width: 100%;
-    background-color: #333333;
+  width: 100%;
+  background-color: #333333;
 }
 
 /* tooltip search */
 .inputSearch[data-tooltip]::before {
-    position: relative;
+  position: relative;
 }
 
 .inputSearch[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-    width: 250px;
-    text-align: center;
-    bottom: 76%;
-    opacity: 0;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  text-align: center;
+  bottom: 76%;
+  opacity: 0;
 }
 
 .inputSearch[data-tooltip]::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    left: 39%;
-    bottom: 71%;
-    opacity: 0;
-
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  left: 39%;
+  bottom: 71%;
+  opacity: 0;
 }
 
 .inputSearch[data-tooltip]:hover::after,
 .inputSearch[data-tooltip]:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* tooltip đang nhap va dang ky */
 /* dang nhap */
 .btndangnhap[data-tooltip] {
-    position: relative;
+  position: relative;
 }
 
 .btndangnhap[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-    width: 250px;
-    text-align: center;
-    bottom: 105%;
-    right: -101%;
-    opacity: 0;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  text-align: center;
+  bottom: 105%;
+  right: -101%;
+  opacity: 0;
 }
 
 .btndangnhap[data-tooltip]::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    left: 39%;
-    bottom: 93%;
-    opacity: 0;
-
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  left: 39%;
+  bottom: 93%;
+  opacity: 0;
 }
 
 .btndangnhap[data-tooltip]:hover::after,
 .btndangnhap[data-tooltip]:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* đăng ký */
 .btndangky[data-tooltip] {
-    position: relative;
+  position: relative;
 }
 
 .btndangky[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-    width: 250px;
-    text-align: center;
-    bottom: 105%;
-    left: -101%;
-    opacity: 0;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  text-align: center;
+  bottom: 105%;
+  left: -101%;
+  opacity: 0;
 }
 
 .btndangky[data-tooltip]::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    left: 39%;
-    bottom: 93%;
-    opacity: 0;
-
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  left: 39%;
+  bottom: 93%;
+  opacity: 0;
 }
 
 .btndangky[data-tooltip]:hover::after,
 .btndangky[data-tooltip]:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* tooltip navigation */
 .contact[data-tooltip]::before {
-    position: relative;
+  position: relative;
 }
 
 .contact[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-    width: 250px;
-    text-align: center;
-    bottom: 76%;
-    left: 10%;
-    opacity: 0;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  text-align: center;
+  bottom: 76%;
+  left: 10%;
+  opacity: 0;
 }
 
 .contact[data-tooltip]::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    left: 39%;
-    bottom: 71%;
-    opacity: 0;
-
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  left: 39%;
+  bottom: 71%;
+  opacity: 0;
 }
 
 .contact[data-tooltip]:hover::after,
 .contact[data-tooltip]:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* tooltip item_nvg */
 
 .item_nvg[data-tooltip]::before {
-    position: relative;
+  position: relative;
 }
 
 .item_nvg[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    border-radius: 50px;
-    width: 250px;
-    text-align: center;
-    bottom: 64%;
-    left: 10%;
-    opacity: 0;
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: 250px;
+  text-align: center;
+  bottom: 64%;
+  left: 10%;
+  opacity: 0;
 }
 
 .item_nvg[data-tooltip]::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    top: 36%;
-    opacity: 0;
-
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  top: 36%;
+  opacity: 0;
 }
 
 .item_nvg[data-tooltip]:hover::after,
 .item_nvg[data-tooltip]:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
