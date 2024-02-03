@@ -1,218 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22130163</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/lab7.css">
-</head>
-
-<style>
-
-</style>
-
-<body>
-    <!-- btn href # -->
-    <a style="width: 50px; background-color: #E8EBED;" class="btnHome btn btn-light" href="#"><i class="fa-solid fa-arrow-up"></i></a>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary">
-        Launch demo modal
-    </button>
-
-    <!-- Modal liên hệ -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Liên hệ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Họ và tên"
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Số điện thoại"
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                    </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-primary">Gửi</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- header -->
-    <header>
-        <div>
-            <h1>Học để lập trình</h1>
-        </div>
-        <div data-tooltip="Hãy nhấn vào đây để tìm kiếm." class="inputSearch">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input class="search" type="text" placeholder="Tìm kiếm khóa học, bài viết, video, ..." />
-        </div>
-        <div>
-            <button data-tooltip="Nhấn vào đây để đăng nhập" class="btndangnhap">Đăng nhập</button>
-            <button data-tooltip="Nhấn vào đây để tạo tài khoản" class="btndangky">Đăng ký</button>
-        </div>
-    </header>
-
-    </div>
-
-    <!-- body -->
-    <section>
-        <!-- phần menu bên trái -->
-        <div class="navigation">
-            <div>
-                <a class="items_nvg" href="#"> <i class="icon_nvg fa-solid fa-house"></i> <span class="text_nvg">Trang
-                        chủ</span>
-                </a>
-                <a class="item_nvg" href="#"> <i class="icon_nvg fa-solid fa-road"></i> <span class="text_nvg">Lộ
-                        trình</span>
-                </a>
-                <a class="item_nvg" href="#"> <i class="icon_nvg fa-regular fa-file-lines"></i> <span
-                        class="text_nvg">Bài
-                        viết</span>
-                </a>
-                <a data-tooltip="Nhấn vào đây để trở về trang about" class="item_nvg" href="about.html"> <i
-                        class="icon_nvg fa-solid fa-user"></i> <span class="text_nvg">About</span>
-                </a>
-            </div>
-
-            <a data-tooltip="Nhấn vào đây để xem biểu mẫu liên hệ" class="contact" data-bs-toggle="modal"
-                data-bs-target="#exampleModal"><i class="fa-brands fa-signal-messenger"></i> <span>Liên hệ</span></a>
-
-            <!-- Phần nội dung chính -->
-        </div>
-        <div class="mainContent">
-            <!-- slide show -->
-            <div class="slideshow-container">
-                <div class="mySlides">
-                    <img class="imgslide" src="imgs/webdev.jpg" alt="Image 1">
-                </div>
-                <div class="mySlides">
-                    <img class="imgslide" src="imgs/webdev1.jpg" alt="Image 1">
-                </div>
-                <div class="mySlides">
-                    <img class="imgslide" src="imgs/webdev2.jpg" alt="Image 1">
-                </div>
-                <div class="mySlides">
-                    <img class="imgslide" src="imgs/webdev3.jpg" alt="Image 1">
-                </div>
-                <div class="mySlides">
-                    <img class="imgslide" src="imgs/webdev5.jpg" alt="Image 1">
-                </div>
-            </div>
-            <div class="Khoahoc">
-                <h2>Khóa học miễn phí.</h2>
-                <div class="khoahoc_row1">
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc2.png" alt="">
-                        <p>Kiến thức nhập môn IT</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc3.png" alt="">
-                        <p>Lập trình C++ cơ bản, nâng cao.</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc1.png" alt="">
-                        <p>HTML, CSS cơ bản.</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc4.png" alt="">
-                        <p>Responsive với Grid System.</p>
-                    </div>
-                </div>
-
-                <div class="khoahoc_row1">
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc5.png" alt="">
-                        <p>Lập trình JavaScript cơ bản.</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc6.png" alt="">
-                        <p>Lập trình JavaScript nâng cao.</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc7.png" alt="">
-                        <p>Làm việc với Terminal & Ubultu.</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc8.png" alt="">
-                        <p>Xây dựng Website với ReactJS.</p>
-                    </div>
-                </div>
-                <div class="khoahoc_row1">
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc9.png" alt="">
-                        <p>Node & ExpressJS</p>
-                    </div>
-                    <div class="cot1">
-                        <img class="imgkhoahoc" src="imgs/khoahoc10.png" alt="">
-                        <p>App "Đừng chạm tay lên mặt".</p>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-
-    <footer>
-        <p> @ Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
-    </footer>
-
-
-
-
-
-
-    <script>
-        let slideIndex = 0;
-
-        function showSlides() {
-            let i;
-            const slides = document.getElementsByClassName("mySlides");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 3 seconds
+    <!-- Liên kết với Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            /* Reset margin to ensure full width */
+            padding: 0;
+            /* Reset padding */
         }
 
-        showSlides(); // Start the slideshow
-    </script>
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho header */
+        }
 
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        nav {
+            padding: 10px;
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 1;
+            /* Đặt z-index cho nav */
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Đặt z-index cao hơn nếu cần */
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            /* Thêm thanh cuộn dọc khi nội dung vượt quá chiều cao */
+            padding-bottom: 100px;
+            /* Thêm padding-bottom để giảm nguy cơ che khuất bởi footer */
+            position: relative;
+            /* Thêm thuộc tính position: relative */
+            z-index: 0;
+            /* Đặt z-index cho section */
+
+        }
+
+        article {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            flex-basis: 25%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            margin-top: 20px;
+            /* Thêm margin-top để giảm nguy cơ che khuất bởi section */
+            z-index: 1;
+            /* Đặt z-index cho footer */
+        }
+
+        .img_content {
+            border-radius: 5px;
+            width: 320px;
+            height: 230px;
+        }
+
+        .container_content {
+            border-bottom: 1px solid black;
+        }
+
+        .sidebar_content {
+            margin-top: 40px;
+        }
+
+        .header_dulich {
+            background-color: rgb(119, 121, 119);
+        }
+
+        .hinhgoiy {
+            width: 150px;
+            height: 100px;
+            border-radius: 2px;
+        }
+
+        .containers {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-between">
+        <a style="color: #fff;" class="navbar-brand" href="lab6.html">
+            <h1>Lab7</h1>
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="about.html">About</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent2" data-toggle="collapse">Requirement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#labContent1" data-toggle="collapse">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lab7-implementation.html">Implementation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="labContent2" class="collapse">
+        <article class="d-flex flex-column align-items-center">
+            <div>
+                <h3>Requirement: Tạo một trang Web có nội dung bất kỳ, sử dụng linh hoạt tất cả những phần sau: Input
+                    Controls, Navigation, Animations, Default Settings, Guided Actions
+                    Có biểu mẫu liên hệ
+                    Upload lên github</h3>
+            </div>
+        </article>
+    </section>
+
+    <section id="labContent1" class="collapse">
+        <article class="d-flex flex-column align-items-center">
+            <div>
+                <img style="width: 800px; height: 800px;" src="imgs/lab7giay.jpg" alt="">
+                <a href="imgs/lab7giay.jpg" download>
+                    <button class="btn-rounded btn btn-primary mt-4">Download</button>
+                </a>
+            </div>
+            <div>
+                <img style="width: 800px;" src="imgs/lab7figma.jpg" alt="">
+                <a href="imgs/lab7figma.jpg" download>
+                    <button class="btn-rounded btn btn-primary mt-4">Download</button>
+                </a>
+                <a
+                    href="https://www.figma.com/file/G3wpHfgyoBpS1AiEzXjwjt/Untitled?type=design&mode=design&t=XdEVHfOrjhPft0SB-0">
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Go To Figma</button>
+                </a>
+
+            </div>
+        </article>
+    </section>
+
+
+
+
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <p class="text-white">&copy; Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
+        </div>
+    </footer>
+
+    <!-- Liên kết với Bootstrap JS và Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

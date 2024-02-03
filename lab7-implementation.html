@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22130163</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/lab7.css">
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- btn href # -->
+    <a style="width: 50px; background-color: #E8EBED;" class="btnHome btn btn-light" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary">
+        Launch demo modal
+    </button>
+
+    <!-- Modal liên hệ -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Liên hệ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Họ và tên"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Số điện thoại"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- header -->
+    <header>
+        <div>
+            <h1>Học để lập trình</h1>
+        </div>
+        <div data-tooltip="Hãy nhấn vào đây để tìm kiếm." class="inputSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="text" placeholder="Tìm kiếm khóa học, bài viết, video, ..." />
+        </div>
+        <div>
+            <button data-tooltip="Nhấn vào đây để đăng nhập" class="btndangnhap">Đăng nhập</button>
+            <button data-tooltip="Nhấn vào đây để tạo tài khoản" class="btndangky">Đăng ký</button>
+        </div>
+    </header>
+
+    </div>
+
+    <!-- body -->
+    <section>
+        <!-- phần menu bên trái -->
+        <div class="navigation">
+            <div>
+                <a class="items_nvg" href="#"> <i class="icon_nvg fa-solid fa-house"></i> <span class="text_nvg">Trang
+                        chủ</span>
+                </a>
+                <a class="item_nvg" href="#"> <i class="icon_nvg fa-solid fa-road"></i> <span class="text_nvg">Lộ
+                        trình</span>
+                </a>
+                <a class="item_nvg" href="#"> <i class="icon_nvg fa-regular fa-file-lines"></i> <span
+                        class="text_nvg">Bài
+                        viết</span>
+                </a>
+                <a data-tooltip="Nhấn vào đây để trở về trang about" class="item_nvg" href="about.html"> <i
+                        class="icon_nvg fa-solid fa-user"></i> <span class="text_nvg">About</span>
+                </a>
+            </div>
+
+            <a data-tooltip="Nhấn vào đây để xem biểu mẫu liên hệ" class="contact" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><i class="fa-brands fa-signal-messenger"></i> <span>Liên hệ</span></a>
+
+            <!-- Phần nội dung chính -->
+        </div>
+        <div class="mainContent">
+            <!-- slide show -->
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev1.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev2.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev3.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <img class="imgslide" src="imgs/webdev5.jpg" alt="Image 1">
+                </div>
+            </div>
+            <div class="Khoahoc">
+                <h2>Khóa học miễn phí.</h2>
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc2.png" alt="">
+                        <p>Kiến thức nhập môn IT</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc3.png" alt="">
+                        <p>Lập trình C++ cơ bản, nâng cao.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc1.png" alt="">
+                        <p>HTML, CSS cơ bản.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc4.png" alt="">
+                        <p>Responsive với Grid System.</p>
+                    </div>
+                </div>
+
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc5.png" alt="">
+                        <p>Lập trình JavaScript cơ bản.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc6.png" alt="">
+                        <p>Lập trình JavaScript nâng cao.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc7.png" alt="">
+                        <p>Làm việc với Terminal & Ubultu.</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc8.png" alt="">
+                        <p>Xây dựng Website với ReactJS.</p>
+                    </div>
+                </div>
+                <div class="khoahoc_row1">
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc9.png" alt="">
+                        <p>Node & ExpressJS</p>
+                    </div>
+                    <div class="cot1">
+                        <img class="imgkhoahoc" src="imgs/khoahoc10.png" alt="">
+                        <p>App "Đừng chạm tay lên mặt".</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <p> @ Bài tập do Hoàng Lê Nguyên Mạnh thực hiện.</p>
+    </footer>
+
+
+
+
+
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change slide every 3 seconds
+        }
+
+        showSlides(); // Start the slideshow
+    </script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
